@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url("img/tec.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Header fixado no topo */
+header.topo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 20px 20px;
+  color: white;
+  height: 60px;
+  width: auto;
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+/* Centraliza APENAS o formulário */
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("img/tec.png"); /* Caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: black;        /* Alterado para preto */
+    color: white;             /* Texto branco */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #333;         /* Preto um pouco mais claro no hover */
+}
+
+.mensagem {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.mensagem.sucesso {
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.mensagem.erro {
+    border: 2px solid #f44336;
+    color: #f44336;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.mensagem {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.mensagem.sucesso {
+    border: 2px solid #38b93c;
+    color: #0fec16;
+}
+
+.mensagem.erro {
+    border: 2px solid #f44336;
+    color: #f44336;
+}
+
+.mensagem1 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.mensagem1.sucesso {
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.mensagem1.erro {
+    border: 2px solid #f44336;
+    color: #f44336;
+}
+
+
+/* TOPO */
+.topo {
+  font-family: 'Cinzel Decorative', serif;
+  display: flex;
+  justify-content: center;     /* Centraliza horizontalmente */
+  align-items: center;         /* Centraliza verticalmente */
+  background: #0a0a0a;
+  padding: 20px 40px;
+  color: white;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;       /* Permite alinhar span se quiser */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.1);
+}
+
+.logo span {
+  color: #00f0ff;
+}
+p a{
+    color: rgb(255, 255, 255);             /* Links pretos */
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+
+  .topo nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
+  .topo nav ul {
+    display: flex;
+    align-items: center; /* Isso centraliza verticalmente */
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .topo nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    line-height: 1;
+  
+  }
+  
+  .topo nav ul li a:hover {
+    color: #00f0ff;
+  
+  }
+  
+  .botoes-topo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  
+  }
+  
+  .btn-topo {
+    background: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  
+  }
+  
+  .btn-topo:hover {
+    background: #00bfff;
+  
+  }
+  
+  
+  .btn-secundario {
+    background: #a855f7;
+  
+  }
+  
+  .btn-secundario:hover {
+    background: #c084fc;
+  
+  }
+  
+  .botao-primario {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #00ffff, #c080ff);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    cursor: pointer;
+    display: inline-block;
+  }
+  .botao-primario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(192, 128, 255, 0.6);
+  }
+  
+

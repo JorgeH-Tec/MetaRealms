@@ -1,0 +1,582 @@
+/* mundo_artes_marciais.css */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Cinzel Decorative', serif;
+  background: #120000;
+  color: #eee;
+}
+
+
+
+/* HERO */
+.hero-artes-marciais {
+  height: 100vh;
+  background: linear-gradient(135deg, #300000, #150000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  color: #f33;
+  border: 1.5px solid #660000;
+  box-shadow: 0 0 30px #880000aa;
+  overflow: hidden;
+}
+
+.hero-artes-marciais .conteudo-hero {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-artes-marciais h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ff4444, #880000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ff0000aa;
+}
+
+.hero-artes-marciais p {
+  font-size: 1.2rem;
+  color: #ffa0a0;
+  margin-bottom: 30px;
+}
+
+.hero-artes-marciais .imagem-hero {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-artes-marciais .imagem-hero img {
+  max-height: 75vh;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.5) drop-shadow(0 0 8px rgba(255, 0, 0, 0.7));
+  border-radius: 10px;
+}
+
+/* CARDS DAS CLASSES */
+.cards-classes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-classe {
+  background: linear-gradient(180deg, #2a0000, #100000);
+  border: 2px solid #660000;
+  box-shadow: 0 0 15px #88000088;
+  border-radius: 20px;
+  width: 320px;
+  padding: 20px;
+  color: #ff6666;
+  text-align: center;
+  position: relative;
+  cursor: default;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  
+}
+
+.card-classe:hover {
+  box-shadow: 0 0 25px 6px #ff4444cc;
+}
+
+.card-classe h2 {
+  margin-top: -25px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff2222;
+  font-weight: 900;
+  text-shadow: 0 0 8px #ff0000;
+}
+
+.card-classe p {
+  font-size: 1rem;
+  color: #ffa0a0;
+  margin-bottom: 20px;
+}
+
+.card-classe .simbolo {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 6px #1a0000);
+
+}
+
+.card-classe img {
+  width: 280px;
+  height: 200px;
+  object-fit: contain; /* cobre o container, cortando onde precisar */
+  /* ou object-fit: contain; para caber inteiro, com espaço sobrando */
+  border-radius: 20%;
+  filter: brightness(1.5);
+  box-shadow: 0 0 5px #ff0000cc;
+}
+
+.cards-classes .btn-detalhes {
+  background: linear-gradient(45deg, #cc0000, #770000);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+}
+
+.cards-classes .btn-detalhes:hover {
+  background: linear-gradient(45deg, #810000, #eb0000);
+  box-shadow: 0 0 10px #ff0000cc;
+}
+
+/* SOBRE */
+
+.sobre-mundo {
+background:#1a0000; 
+color:#ffaaaa; 
+padding:60px 10%; 
+text-align:center; 
+border-radius: 10%; 
+overflow: hidden; 
+position: relative;
+box-shadow: 0 0 15px #88000088;
+
+}
+
+.sobre-mundo h2{
+color:#ff4444; 
+font-size:2.5rem; 
+text-shadow:0 0 10px red;
+  
+}
+
+.sobre-mundo p{
+max-width:900px; 
+margin:30px auto; 
+font-size:1.1rem; 
+line-height:1.6;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/*.card-classe.corpo-a-corpo .simbolo {
+  color: #220000;
+  background: #140000;
+  border-radius: 10%;
+  padding: 5px 10px;
+}
+*/
+
+
+/* MISSÕES */
+.missoes-section {
+  background: #1a0000;
+  padding: 50px 20%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 30px #880000aa;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.missoes-section h2 {
+  color: #ff4444;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 8px #ff0000;
+}
+
+.missoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.missao-card {
+  background: #300000;
+  border: 1.5px solid #660000;
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffaaaa;
+  box-shadow: 0 0 15px #bb000033;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.missao-card:hover {
+  box-shadow: 0 0 30px #ff0000cc;
+  transform: scale(1.04);
+}
+
+.missao-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff2222;
+  font-weight: 700;
+  text-shadow: 0 0 5px #ff5555;
+}
+
+.missao-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.missao-card .btn-detalhes {
+  background: linear-gradient(45deg, #cc0000, #770000);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+}
+
+.missao-card .btn-detalhes:hover {
+  background: linear-gradient(45deg, #810000, #eb0000);
+  box-shadow: 0 0 10px #ff0000cc;
+}
+
+/* MODAL DETALHES */
+.modal-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(40, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-fundo.show {
+  display: flex;
+}
+
+.modal-conteudo {
+  background: #220000;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  color: #ff6666;
+  box-shadow: 0 0 30px #ff0000cc;
+  position: relative;
+  font-size: 1rem;
+}
+
+.modal-conteudo h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff2222;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #ff4444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-artes-marciais {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-artes-marciais .conteudo-hero,
+  .hero-artes-marciais .imagem-hero {
+    max-width: 100%;
+  }
+
+  .cards-classes {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+.fundo-texto5 {
+  position: absolute;
+
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;  /* ocupa toda a altura da section */
+  object-fit: cover;  /* ajusta o tamanho da imagem mantendo proporção */
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(1px) brightness(1.3) saturate(1.6) drop-shadow(0 0 5px #ff0000cc);
+  transition: filter 0.5s ease;
+  right: 330px;
+}
+.fundo-texto6 {
+  position: absolute;
+
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;  /* ocupa toda a altura da section */
+  object-fit: cover;  /* ajusta o tamanho da imagem mantendo proporção */
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(1px) brightness(1.3) saturate(1.6) drop-shadow(0 0 5px #ff0000cc);
+  transition: filter 0.5s ease;
+  right: -150px;
+}
+.fundo-texto7 {
+  position: absolute;
+
+  justify-content: center;
+  text-align: center;
+  width: 77%;
+  height: 77%;  /* ocupa toda a altura da section */
+  object-fit: cover;  /* ajusta o tamanho da imagem mantendo proporção */
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(1px) brightness(1.3) saturate(1.6) drop-shadow(0 0 5px #ff0000cc);
+  transition: filter 0.5s ease;
+  right: 10px;
+  top: 0;
+  transform: translateY(-585px); /* Subir = valor negativo, descer = positivo */
+
+}
+
+
+/* MAPA */
+
+/* mapa_artes_marciais.css */
+
+.mapa-mundo {
+  background: #1a0000;
+  padding: 60px 10%;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 0 auto 60px; /* <-- Centraliza horizontalmente e mantém margem inferior */
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -5px #880000aa;
+}
+
+.mapa-mundo h2 {
+  color: #ff3333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 12px red;
+}
+
+.mapa-mundo h3 {
+  color: #ff4444;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  text-shadow: 0 0 8px #ff0000aa;
+}
+
+.mapa-mundo p {
+  color: #ffaaaa;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.mapa-mundo .mapa-principal {
+  width: 60%;
+  max-width: 900px;
+  border: 2px solid #770000;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff000055;
+  margin: 30px 0;
+}
+
+/* Para futuras imagens de locais individuais: */
+.local-img {
+  width: 100%;
+  max-width: 400px;
+  border: 1.5px solid #660000;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 10px #77000088;
+  transition: transform 0.3s ease;
+}
+
+.local-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0000aa;
+}
+
+/* Texto destacado dentro da seção */
+.mapa-mundo .destaque {
+  color: #ff6666;
+  font-weight: bold;
+}
+
+
+
+
+/* DEMO */
+
+.demo-jogo {
+  background: linear-gradient(145deg, #1a0000, #300000);
+  color: #ffcccc;
+  text-align: center;
+  padding: 80px 10%;
+  box-shadow: 0 0 30px #880000aa;
+}
+
+.demo-jogo h2 {
+  font-size: 2.5rem;
+  color: #ff4444;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #ff0000aa;
+}
+
+.demo-jogo p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-jogar {
+  background: linear-gradient(45deg, #cc0000, #770000);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px #ff0000cc;
+}
+
+.btn-jogar:hover {
+  background: linear-gradient(45deg, #ff4444, #aa0000);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0000cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+
+
+.modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-conteudo {
+      background: #1a0000;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      color: white;
+      position: relative;
+      box-shadow: 0 0 20px red;
+      
+    }
+
+    .modal-conteudo h2 {
+      margin-bottom: 15px;
+      color: #ff3333;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-conteudo p {
+      margin-bottom: 10px;
+    }
+
+    .fechar {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
+
+
+
+

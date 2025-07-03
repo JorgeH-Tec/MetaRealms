@@ -1,0 +1,478 @@
+
+/* TOPO */
+.topo {
+  position: relative; /* necessário para o posicionamento absoluto funcionar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 20px 50px;
+  height: 70px;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  flex: 0 0 auto; /* impede que a logo estique ou encolha */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.logo a {
+  color: inherit;           /* mantém a cor original */
+  text-decoration: none;    /* remove linha embaixo */
+  display: flex;            /* mantém layout flexível */
+  align-items: center;      /* centraliza verticalmente */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.1);
+}
+
+
+
+.logo span {
+  color: #00f0ff;
+}
+
+.topo nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+.topo nav ul {
+  display: flex;
+  align-items: center; /* Isso centraliza verticalmente */
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.topo nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.topo nav ul li a:hover {
+  color: #00f0ff;
+
+}
+
+
+/* Garante que o header use flex */
+header.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Centraliza a nav no espaço disponível */
+.botoes_center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+/* Remove padding e margem padrão da ul */
+.botoes_center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* espaçamento entre os itens */
+}
+
+/* Estilização dos links */
+.botoes_center a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+.botoes-topo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex: 0 0 auto; /* impede que essa parte cresça demais */
+}
+
+
+.btn-topo {
+  background: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+}
+
+.btn-topo:hover {
+  background: #00bfff;
+
+}
+
+
+.btn-secundario {
+  background: #a855f7;
+
+}
+
+.btn-secundario:hover {
+  background: #c084fc;
+
+}
+
+.botao-primario {
+  padding: 15px 30px;
+  background: linear-gradient(to right, #00ffff, #c080ff);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  cursor: pointer;
+  display: inline-block;
+}
+.botao-primario:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(192, 128, 255, 0.6);
+}
+/* TOPO */
+
+
+/* FOOTER */
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #999;
+}
+/* FOOTER */
+
+
+/* Canvas do fundo animado */
+#space-canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  pointer-events: none;
+  background: transparent !important;
+  display: block !important;
+}
+
+/* Conteúdo da página sobre o fundo 
+body > *:not(#space-canvas) {
+  position: relative;
+  z-index: 1;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+main, footer, .hero, .destaque, .cta {
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Garantir que o body possa rolar */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #0a001f; /* Fundo escuro para o tema espacial */
+  color: #ccc; /* Texto claro para contraste */
+}
+
+/* Canvas do fundo animado */
+
+
+
+/* Seus estilos existentes continuam normalmente aqui */
+
+/*imagem atras*/
+/* Container principal do destaque */
+
+.h2bonitin {
+  background: linear-gradient(90deg, #00f0ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+  justify-content: center;
+  padding: 3%;
+  flex-direction: column;
+
+}
+
+.avatar-pequeno {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent; /* removido o #0ff fixo */
+  vertical-align: middle;
+}
+
+/* Cores da borda conforme o grupo do avatar */
+.borda-vermelha {
+  border-color: #ff4444 !important;
+}
+
+.borda-azul {
+  border-color: #44ccff !important;
+}
+
+.borda-verde {
+  border-color: #66ff66 !important;
+}
+
+.dropdown-perfil {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: linear-gradient(145deg, #0f001f, #1a0033);
+  color: #ccc;
+  padding: 20px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 25px rgba(168, 85, 247, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  animation: fadeDropdown 0.3s ease;
+}
+
+@keyframes fadeDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-perfil label {
+  font-size: 0.9rem;
+  color: #0ff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.dropdown-perfil input[type="text"],
+.dropdown-perfil input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #0a0a1f;
+  color: #fff;
+  border: 1px solid #333;
+  transition: border 0.3s;
+}
+
+.dropdown-perfil input[type="text"]:focus,
+.dropdown-perfil input[type="email"]:focus {
+  border: 1px solid #0ff;
+  outline: none;
+}
+
+.grupo-avatar {
+  margin-bottom: 20px;
+  display: block;
+}
+/*
+.avatar-opcoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 1px 0;
+}*
+*/
+
+.avatar-opcoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1px 0;
+}
+
+.avatar-opcoes label {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar-opcoes label:hover {
+  transform: scale(1.1);
+}
+
+.avatar-opcoes input[type="radio"] {
+  display: none;
+}
+
+.avatar-opcoes img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  object-fit: cover;
+  transition: border 0.3s ease, transform 0.2s ease;
+}
+
+.avatar-opcoes input[type="radio"]:checked + img {
+  transform: scale(1.1);
+}
+
+.dropdown-perfil button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00ffff, #a855f7);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-perfil button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to right, #00bfff, #c084fc);
+}
+
+/* Container do checkbox */
+.checkbox-reset-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Esconde o checkbox nativo */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Visual do checkbox estilizado */
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.custom-checkbox span {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #a855f7; /* cor da borda quando desmarcado */
+  background: transparent;
+  color: #a855f7;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Efeito quando marcado */
+.custom-checkbox input[type="checkbox"]:checked + span {
+  background: linear-gradient(to right, #00ffff, #a855f7);
+  border-color: #00ffff;
+  color: #000;
+}
+
+
+.botao-sair {
+  background: #cc0000;
+  color: white;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botao-sair:hover {
+  background: #ff4444;
+}
+
+.container-avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.titulo-avatar {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.titulo-avatar.vermelho {
+  background: linear-gradient(to right, #660000, #ff4444);
+  color: #fff;
+}
+
+.titulo-avatar.azul {
+  background: linear-gradient(to right, #003366, #44ccff);
+  color: #fff;
+}
+
+.titulo-avatar.verde {
+  background: linear-gradient(to right, #004d00, #66ff66);
+  color: #fff;
+}

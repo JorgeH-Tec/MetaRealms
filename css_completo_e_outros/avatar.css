@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0c1d;
+    color: white;
+  }
+  
+  .navbar {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid purple;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .logo span {
+    color: cyan;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .buttons button {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login {
+    background-color: #3b82f6;
+  }
+  
+  .signup {
+    background-color: #a855f7;
+  }
+  
+  .gallery-top {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #14002d;
+  }
+  
+  .cards-top {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: #2d1c42;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px #6c2bd9;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card button {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #6d28d9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .carousel-section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #1b1234;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #6c2bd9;
+    color: white;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  

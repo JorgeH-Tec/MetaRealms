@@ -1,0 +1,1130 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d1a;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* TOPO */
+.topo {
+  position: relative; /* necessário para o posicionamento absoluto funcionar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 20px 50px;
+  height: 70px;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  flex: 0 0 auto; /* impede que a logo estique ou encolha */
+}
+
+
+.logo span {
+  color: #00f0ff;
+}
+
+.topo nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+.topo nav ul {
+  display: flex;
+  align-items: center; /* Isso centraliza verticalmente */
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.topo nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.topo nav ul li a:hover {
+  color: #00f0ff;
+
+}
+
+.botoes-topo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex: 0 0 auto; /* impede que essa parte cresça demais */
+}
+
+/* Garante que o header use flex */
+header.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Centraliza a nav no espaço disponível */
+.botoes_center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Remove padding e margem padrão da ul */
+.botoes_center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* espaçamento entre os itens */
+}
+
+/* Estilização dos links */
+.botoes_center a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilização dos botões no topo */
+.botoes-topo {
+  display: flex;
+  gap: 15px;
+}
+
+.botoes-topo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex: 0 0 auto; /* impede que essa parte cresça demais */
+}
+
+
+.btn-topo {
+  background: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+}
+
+.btn-topo:hover {
+  background: #00bfff;
+
+}
+
+
+.btn-secundario {
+  background: #a855f7;
+
+}
+
+.btn-secundario:hover {
+  background: #c084fc;
+
+}
+
+.botao-primario {
+  padding: 15px 30px;
+  background: linear-gradient(to right, #00ffff, #c080ff);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  cursor: pointer;
+  display: inline-block;
+}
+.botao-primario:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(192, 128, 255, 0.6);
+}
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e0057, #0f0033);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero .fundo-abstrato {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+.fundo-texto {
+  position: absolute;
+  top: 30px;              /* ou ajuste conforme o tamanho */
+  left: -60px;             /* coloca na esquerda */
+  width: 63%;         /* pode ser 100% ou mais, dependendo do efeito desejado */
+  max-width: none;     /* para não limitar */
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(1px) brightness(1.3) saturate(1.6);
+  user-select: none;
+
+  transition: filter 0.5s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 0, 255, 0.9));
+}
+
+.fundo-texto2 {
+  position: absolute;
+  top: 30px;              /* ou ajuste conforme o tamanho */
+  left: -60px;             /* coloca na esquerda */
+  width: 100%;         /* pode ser 100% ou mais, dependendo do efeito desejado */
+  max-width: none;     /* para não limitar */
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(1px) brightness(1.3) saturate(1.6);
+  user-select: none;
+
+  transition: filter 0.5s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 0, 255, 0.9));
+}
+
+
+.conteudo-hero {
+  flex: 1;
+  max-width: 45%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00ffff, #c080ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.conteudo-hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+
+.imagem-hero {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.imagem-hero img {
+ /* max-height: 100vh;
+  max-width: 100%;  para não ultrapassar o container */
+  max-height: 100vh;
+  width: auto;
+  object-fit: contain;
+
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  display: block; /* tira espaçamento extra */
+
+
+  transition: filter 0.5s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 0, 255, 0.9));
+}
+
+/*.imagem-hero img:hover {
+  filter: drop-shadow(0 0 7px rgba(255, 0, 255, 0.9));
+}*/
+
+.container {
+  position: relative;
+  width: fit-content;
+  float: right; /* alinha à direita */
+  margin: 20px; /* opcional: espaço ao redor */
+}
+
+.fundo {
+  display: block;
+  width: 400px; /* defina um tamanho fixo se quiser controle */
+  height: auto;
+}
+
+.sobreposto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px; /* mesmo valor da imagem de fundo */
+  height: auto;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .conteudo-hero {
+    max-width: 100%;
+  }
+
+  .imagem-hero {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .imagem-hero img {
+    max-width: 90%;
+    max-height: 60vh;
+  }
+}
+
+/* DESTAQUE */
+.destaque {
+  background: #12002f;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1400px;
+  overflow: hidden;
+}
+
+.destaque .box {
+  background: #1f004d;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 20px #00ffff20;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destaque h2 {
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+.destaque p {
+  color: #ccc;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+/* CTA */
+.cta {
+  background: radial-gradient(circle at center, #320083, #0a001f);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffff, #c080ff, #00ffff);
+  animation: girar 15s linear infinite;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cta-conteudo {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00ffff, #c080ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.cta p span {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.btn-cta {
+  background: linear-gradient(to right, #00ffff, #c080ff);
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(192, 128, 255, 0.6);
+}
+
+
+/* FOOTER */
+footer {
+  background: #0a0a1a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+#destaque {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 1100px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.box-link {
+  display: flex;
+  text-decoration: none;
+  color: #eee; /* cor do texto clara */
+  flex: 1 1 300px;
+  max-width: 400px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, text-shadow 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.box-link:hover {
+  text-shadow: 0 0 8px rgba(170, 0, 170, 0.9);
+}
+
+
+.box {
+  background-color: rgb(85, 0, 85); /* roxo escuro */
+  padding: 1.8rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(85, 0, 85, 0.5);
+  color: #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.box p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.box-link:hover .box,
+.box-link:focus .box {
+  background-color: rgb(170, 0, 170); /* roxo vibrante no hover */
+  box-shadow: 0 8px 30px rgba(170, 0, 170, 0.8);
+  transform: translateY(-6px);
+}
+
+@media (max-width: 600px) {
+  #destaque {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .box-link {
+    max-width: 100%;
+  }
+}
+
+/* Canvas do fundo animado */
+#space-canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  pointer-events: none;
+  background: transparent !important;
+  display: block !important;
+}
+
+/* Conteúdo da página sobre o fundo */
+body > *:not(#space-canvas) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Garantir que o body possa rolar */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #0a001f; /* Fundo escuro para o tema espacial */
+  color: #ccc; /* Texto claro para contraste */
+}
+
+/* Seus estilos existentes continuam normalmente aqui */
+
+/*imagem atras*/
+/* Container principal do destaque */
+#destaque {
+  display: flex;
+  justify-content: center;
+  gap: 50px;           /* Menor espaçamento entre os itens */
+  padding: 2rem 0;
+  max-width: 1400px;    /* Largura menor para forçar o encaixe */
+  margin: 2rem auto;
+  flex-wrap: nowrap;   /* Impede quebra de linha */
+  background: transparent;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+
+
+/* Cada bloco/link e o carrossel */
+.box-link, .carrossel {
+  width: 300px;        /* Largura reduzida */
+
+  flex-grow: 0;
+  flex-basis: 220px;
+}
+
+/* Estilo das caixas */
+.box {
+  background: #1f004d;
+  padding: 20px;       /* Padding um pouco menor */
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff20;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #eee;
+}
+/*
+.box:hover {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* escurece a imagem para destacar o texto 
+  z-index: -1;
+}
+*/
+
+.box h2 {
+  background: linear-gradient(90deg, #00f0ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  font-size: 1.3rem;   /* Fonte menor */
+}
+
+.box p {
+  color: #ccc;
+  font-size: 0.95rem;  /* Fonte menor */
+}
+
+/* Hover */
+.box-link:hover .box {
+
+  box-shadow: 0 0 20px #a855f7;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Carrossel */
+.carrossel {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff20;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Slides do carrossel */
+.carrossel .slides {
+  display: flex;
+  width: 300%;
+  animation: deslizar 12s infinite linear;
+}
+
+/* Imagens do carrossel */
+.carrossel .slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animação */
+@keyframes deslizar {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsivo - para telas pequenas, empilhar */
+@media (max-width: 1000px) {
+  #destaque {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .box-link, .carrossel {
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+
+.carrossel {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff20;
+}
+
+.carrossel-img {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+}
+
+.carrossel-img.ativo {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* CARDS*/
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;       /* força ficar em linha, sem quebrar */
+  overflow-x: auto;        /* barra de scroll só se precisar */
+  gap: 30px;
+  margin: 60px 40px;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+.cards::-webkit-scrollbar {
+  height: 8px;
+}
+.cards::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.card {
+  flex: 0 0 140px; /* largura fixa */
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Seus estilos dos cards abaixo continuam iguais */
+
+/* ARTES MARCIAIS */
+.card.artes-marciais {
+  border: 1px solid #800000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  background: linear-gradient(to bottom, #3a0000, #1a1a1a);
+  border-color: #ff3333;
+  box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.6);
+  position: relative;
+  overflow: visible;
+}
+.card.artes-marciais::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.5), transparent 70%);
+  transform: translateX(-50%) rotate(-5deg);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+  animation: pulsarSangue 2.0s ease-in-out infinite;
+}
+@keyframes pulsarSangue {
+  0%, 100% {
+    transform: translateX(-50%) rotate(-5deg) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(-50%) rotate(-5deg) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* MAGIA */
+.card.magia {
+  border: 1px solid #0040ff;
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
+  background: linear-gradient(to bottom, #001a33, #0d0d1a);
+  border-color: #00ccff;
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.card.magia::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 120%;
+  height: 120%;
+  background: url('img/brilho.png') center/cover no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* DINOSSAUROS */
+.card.dino {
+  border: 1px solid #228B22;
+  box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
+  background: linear-gradient(to bottom, #003300, #0d0d0d);
+  border-color: #00cc66;
+  box-shadow: 0 0 20px rgba(0, 204, 102, 0.4);
+  position: relative;
+  overflow: hidden;
+  
+}
+.card.dino::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 150%;
+  height: 150%;
+  background: url('img/plantas.png') center/cover no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-title1 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff3333;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.card-title2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #00ccff;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.card-title3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #00cc66;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.card p {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* BOTOES SEPARADOS - mantidos igualzinhos */
+.view-btn1 {
+  display: inline-block;
+  background: linear-gradient(to bottom, #ff3a3a, #800000);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.view-btn2 {
+  display: inline-block;
+  background: linear-gradient(to bottom, #3399ff, #003366);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.view-btn3 {
+  display: inline-block;
+  background: linear-gradient(to bottom, #33cc33, #006600);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.view-btn1:hover{
+  opacity: 0.85;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 1px rgba(255, 0, 0, 0.6);
+}
+.view-btn2:hover{
+  opacity: 0.85;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 1px rgba(0, 204, 255, 0.4);
+}
+.view-btn3:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 1px rgba(0, 204, 102, 0.4);
+}
+
+/* Animação para brilho */
+@keyframes brilho-flutuante {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(-5px); opacity: 1; }
+}
+
+.cards-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px 80px;
+  margin: 60px 0;
+  align-items: center;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+}
+
+.cards-carousel .card {
+  flex: 0 0 300px;
+  height: 380px;
+  animation: destaquePassando 4.5s infinite;
+  opacity: 0.7;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.cards-carousel .card:nth-child(1) { animation-delay: 0s; }
+.cards-carousel .card:nth-child(2) { animation-delay: 1.5s; }
+.cards-carousel .card:nth-child(3) { animation-delay: 3s; }
+
+/* animação */
+@keyframes destaquePassando {
+  0%, 20%, 100% {
+    box-shadow: none;
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    box-shadow: 0 0 8px 4px rgba(255, 0, 0, 0.8);
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.cards-carousel .card {
+  flex: 0 0 350px;        /* mantém largura */
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  
+  display: flex;              /* flex container vertical */
+  flex-direction: column;
+  justify-content: space-between; /* botão embaixo */
+  
+
+  height: 520px;           /* altura confortável para tudo */
+
+  
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  
+  /* mantém suas animações, transições e opacidade */
+  animation: destaquePassando 4.5s infinite;
+  opacity: 0.8;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+
+.cards-carousel .card.artes-marciais {
+  animation: destaqueVermelho 4.5s infinite;
+  opacity: 0.7;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.cards-carousel .card.magia {
+  animation: destaqueAzul 4.5s infinite;
+  opacity: 0.7;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.cards-carousel .card.dino {
+  animation: destaqueVerde 4.5s infinite;
+  opacity: 0.7;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.cards-carousel .card.artes-marciais:nth-child(1) { animation-delay: 0s; }
+.cards-carousel .card.magia:nth-child(2) { animation-delay: 1.5s; }
+.cards-carousel .card.dino:nth-child(3) { animation-delay: 3s; }
+
+/* Animações individuais com box-shadow colorida */
+
+@keyframes destaqueVermelho {
+  0%, 20%, 100% {
+    box-shadow: none;
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    box-shadow: 0 0 15px 6px rgba(255, 0, 0, 0.8); /* vermelho */
+    transform: scale(1.025);
+    opacity: 1;
+  }
+}
+
+@keyframes destaqueAzul {
+  0%, 20%, 100% {
+    box-shadow: none;
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    box-shadow: 0 0 15px 6px rgba(0, 204, 255, 0.8); /* azul */
+    transform: scale(1.025);
+    opacity: 1;
+  }
+}
+
+@keyframes destaqueVerde {
+  0%, 20%, 100% {
+    box-shadow: none;
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    box-shadow: 0 0 15px 6px rgba(0, 204, 102, 0.8); /* verde */
+    transform: scale(1.025);
+    opacity: 1;
+  }
+}
+
+
+/* AVATAR*/
+
+.popular-collections {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #120029, #1c0033);
+  color: white;
+  text-align: center;
+  z-index: 1;
+
+
+}
+
+.popular-collections h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  background: #2a004b;
+  border: 1px solid #8338ec;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #8338ec;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card por linha em telas pequenas */
+  }
+}
+
+
+.collection-card {
+  background: #1a0033;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(131, 56, 236, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-card .info {
+  padding: 15px;
+  background: #2b0052;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-top: 1px solid #8338ec;
+}
+
