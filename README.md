@@ -34,9 +34,6 @@ metarealms/
 ├── js/  
 ├── assets/  
 ├── includes/  
-│ ├── conexao.php  
-│ ├── navbar.php  
-│ └── ...  
 ├── inicio.php  
 ├── avatar.php  
 ├── mundo_artes_marciais.php  
