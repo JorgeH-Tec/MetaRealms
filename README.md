@@ -56,10 +56,12 @@ metarealms/
 4. **Acesse no navegador:**  
    [http://localhost/metarealms](http://localhost/metarealms)
 
-5. **Importe o banco de dados:**  
+6. **Importe o banco de dados:**  
    - Acesse: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
    - Crie um banco com o nome: `mundo_virtual`  
    - Importe o arquivo `usuarios.sql` que está na raiz do projeto
+
+6. **A seguir entre na aba "inicio.php" e explore o site**
 
 ---
 
