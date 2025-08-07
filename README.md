@@ -1,6 +1,6 @@
 # 🧠 MetaRealms – Projeto Final de Programação Web
 
-Este repositório apresenta o projeto **MetaRealms**, desenvolvido como conclusão da disciplina de **Programação Web**. Trata-se de um ambiente virtual com mundos temáticos, seleção de avatares, login personalizado e gerenciamento de usuários com banco de dados.
+Este repositório apresenta o projeto **MetaRealms**, desenvolvido como conclusão do curso de **Programação Web**. Trata-se de um ambiente virtual com mundos temáticos, seleção de avatares, login personalizado e gerenciamento de usuários com banco de dados.
 
 ---
 
