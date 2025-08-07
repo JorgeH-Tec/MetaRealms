@@ -31,9 +31,9 @@ O foco do projeto é integrar **HTML, CSS e PHP estruturado** com **MySQL**, ref
 
 metarealms/  
 ├── css/  
-├── js/  
-├── assets/  
+├── js/   
 ├── includes/  
+├── .../  
 ├── index.php  
 ├── avatar.php  
 ├── mundo_artes_marciais.php  
