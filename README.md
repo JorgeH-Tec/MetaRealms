@@ -77,9 +77,8 @@ Este projeto tem como objetivo:
 
 ## 📫 Contato
 
-**GitHub:** [https://github.com/JorgeH-Tec](https://github.com/JorgeH-Tec)  
-**Linkedin:** [https://www.linkedin.com/in/jorge-henrique-16b567263/](https://www.linkedin.com/in/jorge-henrique-16b567263/)  
-**Email:** [jorge.paiv4@gmail.com](mailto:jorge.paiv4@gmail.com)  
+**Email:** [jorge.paiv4@gmail.com](mailto:jorge.paiv4@gmail.com)   
+**Linkedin:** [https://www.linkedin.com/in/jorge-henrique-16b567263/](https://www.linkedin.com/in/jorge-henrique-16b567263/)   
 
 
 ---
