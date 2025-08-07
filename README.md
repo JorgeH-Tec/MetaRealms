@@ -8,19 +8,20 @@ Este repositório apresenta o projeto **MetaRealms**, desenvolvido como conclus�
 
 O sistema simula um **mundo virtual imersivo**, no qual usuários podem:
 
-- Criar conta e fazer login  
-- Escolher avatares personalizados  
+- Criar conta(cadastro) e fazer login  
+- Personalizar seu proprio usuario ao escolher avatares personalizados
 - Explorar mundos temáticos com visuais e interações únicos  
-- Editar perfil e visualizar informações em tempo real  
+- Campo de "esqueceu a senha", caso necessário
 
-O foco do projeto é integrar **HTML, CSS e PHP estruturado** com **MySQL**, reforçando a conexão entre front-end e back-end de forma funcional e visualmente atrativa.
+O foco do projeto é integrar **HTML, CSS, JavaScript e PHP estruturado** com **MySQL**, reforçando a conexão entre front-end e back-end de forma funcional e visualmente atrativa.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** – Estrutura das páginas  
-- **CSS3** – Estilo e identidade visual  
+- **CSS3** – Estilo e identidade visual
+- **JavaScript puro** - Animações e jogos betas
 - **PHP Estruturado** – Lógica de back-end e conexão com o banco  
 - **XAMPP** – Servidor local (Apache + MySQL)  
 - **phpMyAdmin / MySQL** – Gerenciamento do banco de dados  
@@ -59,7 +60,7 @@ metarealms/
 5. **Importe o banco de dados:**  
    - Acesse: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
    - Crie um banco com o nome: `mundo_virtual`  
-   - Importe o arquivo `usuarios.sql` que está na raiz do projeto
+   - Importe o arquivo `usuarios.sql`, que está na raiz do projeto, no banco de dados criado
 
 ---
 
@@ -77,7 +78,9 @@ Este projeto tem como objetivo:
 ## 📫 Contato
 
 **GitHub:** [https://github.com/JorgeH-Tec](https://github.com/JorgeH-Tec)  
+**Linkedin:** [https://www.linkedin.com/in/jorge-henrique-16b567263/](https://www.linkedin.com/in/jorge-henrique-16b567263/)  
 **Email:** [jorge.paiv4@gmail.com](mailto:jorge.paiv4@gmail.com)  
+
 
 ---
 
